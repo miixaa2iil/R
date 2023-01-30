@@ -1,10 +1,6 @@
 library(data.table)
 library(igraph)
 
-setwd("C:/Users/miixaa2iil/Desktop/Studia/ICM/ONS")
-
-
-
 agregaty <- dane[, .(ile =.N), by = c("medyk1", "medyk2")]
 
 graf <- graph_from_data_frame(d=agregaty, directed=FALSE)
